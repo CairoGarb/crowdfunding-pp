@@ -12,22 +12,22 @@ export const Header = () => {
 
   // Values
   const [bambooValue, setBambooValue] = useState(10);
-  const [bambooMinPrice] = useState(25);
+  const bambooMinPrice = 25;
   const [bambooOutOfStock, setBambooOutOfStock] = useState(false);
 
   const [blackEditionValue, setBlackEditionValue] = useState(5);
-  const [blackEditionMinPrice] = useState(75);
+  const blackEditionMinPrice = 75;
   const [blackEditionOutOfStock, setBlackEditionOutOfStock] = useState(false);
 
   const [mahoganyValue, setMahoganyValue] = useState(3);
-  const [mahoganyMinPrice] = useState(200);
+  const mahoganyMinPrice = 200;
   const [mahoganyOutOfStock, setMahoganyOutOfStock] = useState(false);
 
-  const [noRewardMinPrice] = useState(1);
+  const noRewardMinPrice = 1;
 
   const [totalBacked, setTotalBacked] = useState(0);
   const [totalBackers, setTotalBackers] = useState(0);
-  const [backed] = useState(100000);
+  const backed = 100000;
 
   const [pledgeAmount, setPledgeAmount] = useState(Number);
   const [error, setError] = useState("");

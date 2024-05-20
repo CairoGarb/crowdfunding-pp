@@ -299,7 +299,7 @@
 
   .rewardName:hover {
     cursor: pointer;
-    transition: .2s;
+    transition: 0.2s;
     color: var(--cyan);
   }
 
@@ -690,6 +690,11 @@
   }
 }
 
+@media screen and (min-width: 1024px) {
+  .statusContainer {
+  }
+}
+
 /* Mobile */
 
 @media screen and (max-width: 750px) {
@@ -698,7 +703,7 @@
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    height: 50vh;
+    height: 60vh;
     position: relative;
   }
 
@@ -1185,7 +1190,7 @@
 
   /* Status Section */
   .statusContainer {
-    margin: 520px auto 30px auto;
+    margin: 560px auto 30px auto;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -1352,32 +1357,87 @@
   }
 }
 
-@media screen and (min-width: 350px) and (max-width: 390px) {
-  .bsButton, .beButton, .mhButton {
+@media screen and (min-width: 415px) and (max-width: 429px) {
+  .statusContainer {
+    margin-top: 670px;
+    max-width: 375px;
+  }
+  .aboutContainer,
+  .projectDescription {
+    max-width: 375px;
+  }
+}
+
+@media screen and (min-width: 390px) and (max-width: 414px) {
+  .statusContainer,
+  .aboutContainer,
+  .projectDescription {
+    max-width: 375px;
+  }
+  .statusContainer {
+    margin-top: 615px;
+  }
+}
+
+@media screen and (min-width: 375px) and (max-width: 389px) {
+  .statusContainer,
+  .aboutContainer,
+  .projectDescription {
+    max-width: 375px;
+  }
+  .bsButton,
+  .beButton,
+  .mhButton {
     font-size: 12px;
+  }
+  .statusContainer {
+    margin-top: 620px;
+  }
+}
+
+@media screen and (min-width: 350px) and (max-width: 374px) {
+  .statusContainer {
+    margin-top: 605px;
+    max-width: 350px;
+  }
+  .bsButton,
+  .beButton,
+  .mhButton {
+    font-size: 12px;
+  }
+  .aboutContainer,
+  .projectDescription {
+    max-width: 350px;
   }
 }
 
 @media screen and (min-width: 320px) and (max-width: 350px) {
   .statusContainer {
-    margin-top: 504px;
+    margin-top: 530px;
+    max-width: 320px;
   }
-  .bsButton, .beButton, .mhButton {
+  .aboutContainer,
+  .projectDescription {
+    max-width: 320px;
+  }
+  .bsButton,
+  .beButton,
+  .mhButton {
     font-size: 10px;
   }
   .masterButton button {
     font-size: 13px;
   }
-  .ty h2, .mb h2 {
+  .ty h2,
+  .mb h2 {
     font-size: 20px;
   }
-  .ty p, .mb p {
+  .ty p,
+  .mb p {
     font-size: 12px;
   }
-  .ty button, .mb button {
+  .ty button,
+  .mb button {
     font-size: 10px;
   }
 }
-
-
-
